@@ -15,15 +15,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btnEnviar = findViewById(R.id.btnEnviar);
+        Button btnEnviar = findViewById(R.id.btnEnviar);//Selecionando o botao de enviar
+        //Adicionando clickListener ao botao
         btnEnviar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                EditText etDigiteAqui = findViewById(R.id.etDigiteAqui);
-                String texto = etDigiteAqui.getText().toString();
-                Intent intent = new Intent(MainActivity.this, NextActivity.class);
-                intent.putExtra("texto", texto);
-                startActivity(intent);
+                EditText etDigiteAqui = findViewById(R.id.etDigiteAqui);//Selecionando o edit text
+                String texto = etDigiteAqui.getText().toString();//Selecionando o texto do edit text
+                Intent intent = new Intent(MainActivity.this, NextActivity.class);//Criando um intent
+                intent.putExtra("texto", texto);//Adicionado a variavel que contem o texto do edit text na intent
+                startActivity(intent);//Iniciando a intent
             }
         });
     }

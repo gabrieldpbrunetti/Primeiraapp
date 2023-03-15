@@ -12,9 +12,9 @@ public class NextActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_next);
-        Intent intent = getIntent();
-        String texto = intent.getStringExtra("texto");
-        TextView tvExibir = findViewById(R.id.tvExibir);
-        tvExibir.setText(texto);
+        Intent intent = getIntent();//Capturando a intent que foi iniciada
+        String texto = intent.getStringExtra("texto");//Selecionando a variavel de texto que foi adicionada na intent
+        TextView tvExibir = findViewById(R.id.tvExibir);//Selecionando o text view onde o texto sera exibido
+        tvExibir.setText(texto);//exibindo o texto no text view
     }
 }
