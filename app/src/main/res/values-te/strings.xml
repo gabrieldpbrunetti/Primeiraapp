@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">మొదటి అనువర్తనం</string>
+    <string name="et_texto_hint">ఇక్కడ ఏదైనా టైప్ చేయండి:</string>
+    <string name="btn_enviar">పంపండి</string>
+</resources>

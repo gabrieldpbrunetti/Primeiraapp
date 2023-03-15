@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">app yokuqala</string>
+    <string name="et_texto_hint">Chwetheza into apha</string>
+    <string name="btn_enviar">ukuthumela</string>
+</resources>
